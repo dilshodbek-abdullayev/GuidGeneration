@@ -9,8 +9,7 @@ class Program
             int checkNumber = Convert.ToInt32(Console.ReadLine());
             switch(checkNumber){
                 case 1:
-                string guidInfo = GuidGeneration();
-                Console.WriteLine(guidInfo);break;
+                Console.WriteLine(GuidGeneration().ToString());break;
                 case 2: UtcNowGeneration();Console.WriteLine($"Clipboard text is {ClipboardService.GetText()}");break;
                 default: Console.WriteLine("Please select only 1 or 2");break;
             }
